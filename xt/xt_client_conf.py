@@ -1,6 +1,6 @@
 # _*_ coding:utf-8 _*_
 # BASE_URL = "http://xtapi.testdev.fun"
-BASE_URL = "http://api.xt.pub"
+BASE_URL = "https://api.xt.com"
 
 
 class APIConfig(type):
