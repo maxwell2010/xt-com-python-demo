@@ -73,7 +73,7 @@
         
         assert data.get('info') == "Success"
         assert len(data.get('data')) > 0
-        """ ¡®Forth¡¯ is my test account, if not ¡®Forth¡¯ account please switch   """
+        """ Â¡Â®ForthÂ¡Â¯ is my test account, if not Â¡Â®ForthÂ¡Â¯ account please switch   """
         assert data['data'].get('forth') and data['data'].get('usdt')
         
         print("test balance >>> ", data)
@@ -102,7 +102,7 @@
         print("test order >>> ", data)
     
     
-    def test_camcel(self):
+    def test_cancel(self):
         
         accesskey = 'xxxxxxxxxxxxxxxxxxxx'
         secretkey = 'xxxxxxxxxxxxxxxxxxxx'
@@ -113,7 +113,7 @@
                 'id':'6823168236830742528'
         }
         
-        status, data, _ = sra.palce_order(params)
+        status, data, _ = sra.cancel_order(params)
         
         assert  data.get('code') == 200
         assert data.get('data') is not None
